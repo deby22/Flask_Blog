@@ -1,5 +1,5 @@
 repos:
--   repo: https://github.com/deby22/Flask_Blog
+-   repo: https://github.com/ambv/black
     rev: stable
     hooks:
     - id: black
