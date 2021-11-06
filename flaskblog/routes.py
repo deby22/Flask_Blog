@@ -103,7 +103,9 @@ def new_post():
     form = PostForm()
     if form.validate_on_submit():
         flash("Your post has been created!", "success")
-        post = Post(title=form.title.data, content=form.content.data, author=current_user)
+        post = Post(
+            title=form.title.data, content=form.content.data, author=current_user
+        )
         db.session.add(post)
         db.session.commit()
         return redirect(url_for("home"))
