@@ -112,7 +112,6 @@ def account():
     )
 
 
-
 @app.route("/post/new", methods=["GET", "POST"])
 @login_required
 def new_post():
