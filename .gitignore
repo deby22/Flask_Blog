@@ -5,12 +5,13 @@
 __pycache__/
 local_settings.py
 
-#db
+### db ###
 *.db
-
 .env
 db.sqlite3
 
+### images ###
+*/static/profile_pics
 
 ### MyDevil ###
 public/
